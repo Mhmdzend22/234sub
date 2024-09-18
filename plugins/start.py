@@ -82,7 +82,7 @@ async def start_command(client: Client, message: Message):
                 pass
 
         k = await client.send_message(chat_id=message.from_user.id, 
-                                      text=f"<b><i>This File is deleting automatically in {file_auto_delete}. Forward in your Saved Messages..!</i></b>")
+                                      text=f"<b><i>ᴊᴏɪɴ ɢʀᴜᴘ ᴠɪᴘ ᴘᴇʀᴍᴀɴᴇɴ.\nᴀᴅᴍɪɴ 1 : @tyaa86 \nᴀᴅᴍɪɴ 2 : @minjoinvip \n\nʟɪꜱᴛ ᴠɪᴘ : https://t.me.rajakonten_testi/83 \nᴛᴇꜱᴛɪᴍᴏɴɪ : https://t.me.rajakonten_testi</i></b>")
 
         # Schedule the file deletion
         asyncio.create_task(delete_files(codeflix_msgs, client, k))
@@ -92,8 +92,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⚡️ ᴍᴏᴠɪᴇs', url='https://t.me/+QVewP06XCPFiYWZl'),
-                    InlineKeyboardButton('🍁 sᴇʀɪᴇs', url='https://t.me/webseries_flix')
+                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
+                    InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]
         )
