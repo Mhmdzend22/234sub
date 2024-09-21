@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7297484344:AAHdNUScmStTooJXMRJMs2zvQGFzKYD9E7A")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7843183372:AAEhF3sXjOxmEovr6vMeYrbaRb-TR5h-NX0")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "24213496"))
@@ -19,13 +19,13 @@ APP_ID = int(os.environ.get("APP_ID", "24213496"))
 API_HASH = os.environ.get("API_HASH", "460587b3c127073be75378abec90ff56")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002035889639"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002193209521"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "sewxiy")
+OWNER = os.environ.get("OWNER", "andromed34")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6893079708"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6521153981"))
 
 #Port
 PORT = os.environ.get("PORT", "8030")
@@ -35,18 +35,18 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://madara:madara@cluster0.xq
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002088793491"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001864051887"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001787446344"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002114971220 "))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "7200")) # auto delete in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1200")) # auto delete in seconds
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ!! {first}\n\n ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.</b>")
 try:
     ADMINS=[6376328008]
-    for x in (os.environ.get("ADMINS", "6893079708 6843816361 6003783733 6731240638 6521153981").split()):
+    for x in (os.environ.get("ADMINS", "6521153981 6592686660").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -58,7 +58,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>ʜᴇʟʟᴏ {first}\nᴋᴀ
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• ᴊᴏɪɴ ɢʀᴜᴘ ᴠɪᴘ ᴘᴇʀᴍᴀɴᴇɴ.\nᴀᴅᴍɪɴ 1 : @tyaa86 \nᴀᴅᴍɪɴ 2 : @minjoinvip \n\nʟɪꜱᴛ ᴠɪᴘ : https://t.me.rajakonten_testi/83")
 
 #set True if you want to prevent users from forwarding files from bot
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
