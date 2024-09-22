@@ -43,7 +43,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1200")) # auto delete in seconds
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ!! {first}\n\n ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>HALOO!! {first}\n\n Mau cari bahan bacol ??.</b>")
 try:
     ADMINS=[6376328008]
     for x in (os.environ.get("ADMINS", "6521153981 6592686660").split()):
@@ -52,10 +52,10 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>ʜᴇʟʟᴏ {first}\nᴋᴀʟɪᴀɴ ᴡᴀᴊɪʙ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ᴀɢᴀʀ ᴅᴀᴘᴀᴛ ᴍᴇɴᴏɴᴛᴏɴ ᴠɪᴅᴇᴏ !! \nᴘɪʟɪʜ "ꜱᴛᴀʀᴛ" ᴘᴀᴅᴀ ʙᴏᴛ \nᴍᴀᴋᴀ ᴀᴋᴀɴ ᴍᴜɴᴄᴜʟ 2 ᴛᴏᴍʙᴏʟ "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ" \nᴘɪʟɪʜ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ꜱᴀᴛᴜ ᴘᴇʀꜱᴀᴛᴜ ᴍᴀᴋᴀ ᴋᴀʟɪᴀɴ ᴀᴋᴀɴ ᴅɪ\nᴀʀᴀʜᴋᴀɴ ᴍᴀꜱᴜᴋ ᴋᴇ ᴄʜᴀɴɴᴇʟ ᴡᴀᴊɪʙ ᴘɪʟɪʜ ꜱᴜʙꜱᴄʀɪʙᴇ/ʙᴇʀʟᴀɴɢɢᴀɴᴀɴ \nᴋᴇᴍʙᴀʟɪ ᴋᴇ ʙᴏᴛ \nᴘɪʟɪʜ "ʀᴇʟᴏᴀᴅ/ᴍᴜʟᴀɪ ᴜʟᴀɴɢ" \nꜱᴇʟᴀᴍᴀᴛ ɴɢᴏᴄᴏᴋ ... \n\nᴊᴏɪɴ  ɢʀᴜʙ ᴠɪᴘ ᴘᴇʀᴍᴀɴᴇɴ @tyaa86")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>HALOO {first} ‼️\nKAMU BELUM GABUNG CHANNEL KAMI ‼️ \n\nGABUNG CHANNEL TERLEBIH DAHULU AGAR DAPAT MENGGUNAKAN BOT DENGAN CARA KLIK 2 TOMBOL JOIN DI BAWAH INI KEMUDIAN RELOAD/MULAI ULANG BOT.")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• ᴊᴏɪɴ ɢʀᴜᴘ ᴠɪᴘ ᴘᴇʀᴍᴀɴᴇɴ.\nᴀᴅᴍɪɴ 1 : @tyaa86 \nᴀᴅᴍɪɴ 2 : @minjoinvip \n\nʟɪꜱᴛ ᴠɪᴘ : https://t.me.rajakonten_testi/83")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• BOOMMM ‼️‼️")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
@@ -64,7 +64,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" el
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "ᴊᴏɪɴ ɢʀᴜᴘ ᴠɪᴘ ᴘᴇʀᴍᴀɴᴇɴ.\nᴀᴅᴍɪɴ 1 : @tyaa86 \nᴀᴅᴍɪɴ 2 : @minjoinvip \n\nʟɪꜱᴛ ᴠɪᴘ : https://t.me.rajakonten_testi/83"
+USER_REPLY_TEXT = "JOIN GRUP VIP @ordergan"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(6497757690)
