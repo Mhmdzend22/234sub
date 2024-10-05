@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "784372:AAEhF3sXjOxmEovr6vMeYrbaRb-TR5h-NX0")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7771333076:AAFyYA9nMvWDK99iAZasAkRYNVTQAG1R1E8")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "24213496"))
@@ -19,34 +19,34 @@ APP_ID = int(os.environ.get("APP_ID", "24213496"))
 API_HASH = os.environ.get("API_HASH", "460587b3c127073be75378abec90ff56")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002193209521"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002035889639"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "andromed34")
+OWNER = os.environ.get("OWNER", "IndianOtaku")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6521153981"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6003783733"))
 
 #Port
 PORT = os.environ.get("PORT", "8030")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://madara:madara@cluster0.xqkrlic.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002088793491"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001864051887"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1200")) # auto delete in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "3600")) # auto delete in seconds
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>HALOO!! {first}\n\n Mau cari bahan bacol ??.</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>HALO!! {first}\n\nUdah subscribe??.</b>")
 try:
     ADMINS=[6376328008]
-    for x in (os.environ.get("ADMINS", "6521153981 6592686660").split()):
+    for x in (os.environ.get("ADMINS", "6893079708 6003783733").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -55,7 +55,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>HALOO {first} ‼️\nKAMU BELUM GABUNG CHANNEL KAMI ‼️ \n\nGABUNG CHANNEL TERLEBIH DAHULU AGAR DAPAT MENGGUNAKAN BOT DENGAN CARA KLIK 2 TOMBOL JOIN DI BAWAH INI KEMUDIAN RELOAD/MULAI ULANG BOT.")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• BOOMMM ‼️‼️")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• Subscribe dulu ‼️‼️")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
@@ -64,7 +64,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" el
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "JOIN GRUP VIP @ordergan"
+USER_REPLY_TEXT = "Tetaplah beribadah"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(6497757690)
