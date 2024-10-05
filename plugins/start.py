@@ -82,7 +82,7 @@ async def start_command(client: Client, message: Message):
                 pass
 
         k = await client.send_message(chat_id=message.from_user.id, 
-                                      text=f"<b>halo kak {first} \n\nKamu ga cape nonton dengan banyak link dan iklan ? \n\nYuk join vip agar kamu dapat nonton tanpa iklan ‼️ \n\n ADMIN : @ordergan/b>")
+                                      text=f"<b>halo sayangkuh!! {first} \n\nKamu ga cape nonton dengan banyak link dan iklan ? \n\nYuk join vip agar kamu dapat nonton tanpa iklan ‼️ \n\n ADMIN VIP: @tyaa86/b>")
 
         # Schedule the file deletion
         asyncio.create_task(delete_files(codeflix_msgs, client, k))
